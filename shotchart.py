@@ -2,9 +2,6 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
-import streamlit as st
-
-st.title("NBA shot chart")
 
 def draw_plotly_court(fig, fig_width=600, margins=10):
         
