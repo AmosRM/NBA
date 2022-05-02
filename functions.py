@@ -22,6 +22,8 @@ def team_games(team,season):
     team_games = leaguegamefinder.LeagueGameFinder(team_id_nullable=team,season_nullable=season).get_data_frames()[0]
     return team_games
 
-def search_in_team_games():
+def search_in_team_games(team,instances):
     '''search in team game log'''
+    team_col = team_games[team_games['TEAM_ABBREVIATION'] == team]
     
+
